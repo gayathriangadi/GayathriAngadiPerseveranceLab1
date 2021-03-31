@@ -29,7 +29,7 @@ public class Power implements SelfCheckCapable {
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
-		return SelfCheckUtils.checkComponents(null);
+		return SelfCheckUtils.checkComponents();
 	}
 
 	@Override
