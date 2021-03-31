@@ -10,42 +10,27 @@ import edu.fiu.sysdesign.SelfCheckUtils;
  * @author gayat
  *
  */
-public class ObstacleSensor implements SelfCheckCapable {
+public class Visual implements SelfCheckCapable {
 	String Camera;
 	
 	/**
-	 * This method senses light
+	 * This method takes picture
 	 */
-	void lighttracking() {
+	void picture() {
+		
+	}
+	
+	/**
+	 * This method captures Video
+	 */
+	void Video() {
 		
 	}
 
-	/**
-	 * This method senses line
-	 */
-	void linetracking() {
-		
-	}
-	
-	/**
-	 * This method senses obstacle
-	 */
-	void obstacletracking() {
-		
-	}
-	
-	/**
-	 * This method detect face
-	 */
-	
-	void facetracking() {
-		
-	}
-	
 	@Override
 	public String getComponentName() {
 		// TODO Auto-generated method stub
-		return "Obstacle detected";
+		return "Picture and Video captured";
 	}
 
 	@Override
@@ -57,7 +42,7 @@ public class ObstacleSensor implements SelfCheckCapable {
 	@Override
 	public boolean runSelfCheck() {
 		// TODO Auto-generated method stub
-		return SelfCheckUtils.basicSelfCheckRunner(this);
+		return SelfCheckUtils.checkComponents(this);
 	}
 
 }
